@@ -95,8 +95,11 @@ Link任务会检查js/目录下得js文件有没有报错或警告。
 
 gulp.task('sass', function() {
     gulp.src('./scss/*.scss')
+
         .pipe(sass())
+
         .pipe(gulp.dest('./css'));
+        
 });
 Sass任务会编译scss/目录下的scss文件，并把编译完成的css文件保存到/css目录中。
 
